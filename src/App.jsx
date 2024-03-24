@@ -1,7 +1,7 @@
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
-import DashboardPage from "./dashboard-page/DashboardPage";
+import LoginPage from "./login-page";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -10,9 +10,9 @@ function App() {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <>
-          <DashboardPage />
-        </>
+        <Routes>
+          <Route path="/login" element={<LoginPage />} />
+        </Routes>
       </ThemeProvider>
     </ColorModeContext.Provider>
   );

@@ -28,15 +28,15 @@ function DashboardPage() {
             <Topbar />
             <Routes>
               <Route path="/admin/dashboard" element={<Dashboard />} />
-              <Route path="/admin/team" element={<Team />} />
-              <Route path="/admin/contacts" element={<Contacts />} />
-              <Route path="/admin/invoices" element={<Invoices />} />
-              <Route path="/admin/form" element={<Form />} />
-              <Route path="/admin/bar" element={<Bar />} />
-              <Route path="/admin/pie" element={<Pie />} />
-              <Route path="/admin/line" element={<Line />} />
-              <Route path="/admin/faq" element={<FAQ />} />
-              <Route path="/admin/geography" element={<Geography />} />
+              <Route path="team" element={<Team />} />
+              <Route path="contacts" element={<Contacts />} />
+              <Route path="invoices" element={<Invoices />} />
+              <Route path="form" element={<Form />} />
+              <Route path="bar" element={<Bar />} />
+              <Route path="pie" element={<Pie />} />
+              <Route path="line" element={<Line />} />
+              <Route path="faq" element={<FAQ />} />
+              <Route path="geography" element={<Geography />} />
               {/* <Route path="/calendar" element={<Calendar />} /> */}
             </Routes>
           </main>
